@@ -8,3 +8,4 @@ var radarDisplayOptions = {
   transparent: true
 };
 var radar = L.tileLayer.wms(radarUrl, radarDisplayOptions).addTo(map);
+
