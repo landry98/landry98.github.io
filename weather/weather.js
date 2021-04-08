@@ -19,7 +19,8 @@ $.getJSON(weatherAlertsUrl, function(data) {
   if (feature.properties.severity === 'Minor') alertColor = 'purple';
   return { color: alertColor };
 },
-
+},
+           
 onEachFeature: function(feature, layer) {
   layer.bindPopup(feature.properties.headline);
     }
