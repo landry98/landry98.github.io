@@ -12,6 +12,5 @@ var weatherAlertsUrl = 'https://api.weather.gov/alerts/active?region_type=land';
 $.getJSON(weatherAlertsUrl, function(data) {
   L.geoJSON(data, {
   style: { color: 'orange' },
-  // more options go here
 }).addTo(map);
 });
