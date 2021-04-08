@@ -14,10 +14,10 @@ $.getJSON(weatherAlertsUrl, function(data) {
   style: function(feature){
   var alertColor = 'orange';
   if (feature.properties.severity === 'Severe') alertColor = 'red';
+    var alertColor = 'orange';
     if (feature.properties.severity === 'Minor') alertColor = 'purple';
   return { color: alertColor };
 },
-
            
 onEachFeature: function(feature, layer) {
   layer.bindPopup(feature.properties.headline);
