@@ -16,7 +16,7 @@ $.getJSON(weatherAlertsUrl, function(data) {
   if (feature.properties.severity === 'Severe') alertColor = 'red';
   return { color: alertColor };
     if (feature.properties.severity === 'Extreme') alertColor = 'purplw';
-  return { color: alertColor };
+    return { color: alertColor };
 },
 
            
